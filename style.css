@@ -1,0 +1,50 @@
+:root{--bg:#F1F5F8;--ink:#14232E;--muted:#51636F;--line:#CBD6DD;--accent:#2447D6;--dot:#0E8F7E;--surface:#fff;--onaccent:#fff;--note:#F6E7B8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1820;--ink:#E6EEF3;--muted:#9DB0BC;--line:#2A3B47;--accent:#86A0FF;--dot:#4FD1BC;--surface:#15232D;--onaccent:#0E1820;--note:#3A3217}}
+:root[data-theme="dark"]{--bg:#0E1820;--ink:#E6EEF3;--muted:#9DB0BC;--line:#2A3B47;--accent:#86A0FF;--dot:#4FD1BC;--surface:#15232D;--onaccent:#0E1820;--note:#3A3217}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 "Source Sans 3",system-ui,sans-serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem 0;flex-wrap:wrap}
+.brand{font:700 1.25rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);text-decoration:none}
+nav{display:flex;align-items:center;gap:1.25rem}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current="page"]{border-color:var(--accent)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:.35rem .9rem;font:inherit;cursor:pointer}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.12;margin:0}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.02em;margin-bottom:.6rem}
+h2{font-size:1.7rem;margin:2.5rem 0 .8rem}
+main{padding:2.5rem 0 3rem;min-height:70vh}
+.lead{color:var(--muted);font-size:1.2rem;max-width:44rem}
+.text{max-width:44rem}
+.meta{color:var(--muted);font-size:.9rem}
+.author{display:flex;gap:1rem;align-items:center;margin:1.5rem 0}
+.avatar{width:64px;height:64px;border-radius:50%;background:var(--accent);color:var(--onaccent);display:grid;place-items:center;font:700 1.4rem "Bricolage Grotesque",sans-serif;flex:none}
+.author small{color:var(--muted);display:block}
+.author a{margin-right:.9rem;font-weight:600}
+.skills,.tags{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:.8rem 0;list-style:none}
+.skills li,.tags li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.2rem .8rem;font-size:.95rem;font-weight:600}
+.tags li{border-color:var(--dot);color:var(--dot);background:none;font-size:.85rem;padding:.05rem .65rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.5rem;margin-top:1.5rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;color:var(--ink);text-decoration:none}
+.card:hover{border-color:var(--accent)}
+.card svg{display:block;width:100%;height:9rem;background:var(--bg)}
+.card .in{padding:1rem 1.1rem 1.2rem}
+.card h3{font-size:1.2rem}
+.card p{margin:.5rem 0 0;color:var(--muted)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 14rem;gap:3rem}
+.toc{position:sticky;top:1rem;align-self:start;border-left:1px solid var(--line);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.toc a{color:var(--ink);text-decoration:none}
+.toc a:hover{color:var(--accent)}
+.stack{border-left:4px solid var(--accent);background:var(--surface);padding:1rem 1.2rem;margin:1.5rem 0;border-radius:0 10px 10px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--onaccent);padding:.6rem 1.1rem;border-radius:8px;font-weight:600;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1rem;margin:1.5rem 0}
+.stats div{background:var(--surface);border:1px solid var(--line);border-radius:12px;text-align:center;padding:1rem .5rem}
+.stats b{display:block;font:700 2rem "Bricolage Grotesque",sans-serif;color:var(--dot)}
+.note{background:var(--note);border-radius:10px;padding:1rem 1.2rem;margin:1.5rem 0}
+.back{font-weight:600;text-decoration:none}
+footer{border-top:1px solid var(--line);padding:1.5rem 0 3rem;color:var(--muted);font-size:.95rem}
+@media (max-width:800px){.layout{grid-template-columns:1fr}.toc{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
