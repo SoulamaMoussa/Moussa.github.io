@@ -6,7 +6,7 @@ var ME = {
   linkedin: "https://www.linkedin.com/in/TON-PROFIL"
 };
 
-var PROJECTS = [
+var PROJECT = [
   {
     id: "ipc-burkina-faso",
     title: "Prévision de l'indice des prix à la consommation au Burkina Faso",
