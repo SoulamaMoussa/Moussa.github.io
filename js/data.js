@@ -32,7 +32,7 @@ var PROJECTS = [
     note: "",
     sections: [["Objectif", "[…]"], ["Démarche", "[…]"], ["Résultats", "[…]"]]
   },
-  var PROJECTS = [
+
   {
     id: "ipc-burkina-faso",
     title: "Prévision de l'indice des prix à la consommation au Burkina Faso",
@@ -58,6 +58,5 @@ var PROJECTS = [
       ["Limites", "Jeu de test court. Pistes : validation sur plusieurs fenêtres chronologiques, comparaison à une prévision de référence simple, ARIMA plus parcimonieux."],
       ["Équipe", "Projet réalisé en groupe avec Oumar Kaboré et Nestor Cédric Nana."]
     ]
-  }
-];
+  },
 ];
