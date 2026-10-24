@@ -48,3 +48,7 @@ main{padding:2.5rem 0 3rem;min-height:70vh}
 footer{border-top:1px solid var(--line);padding:1.5rem 0 3rem;color:var(--muted);font-size:.95rem}
 @media (max-width:800px){.layout{grid-template-columns:1fr}.toc{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.card img{display:block;width:100%;height:9rem;object-fit:cover;object-position:left center;background:var(--bg)}
+.hero-img{margin:1.5rem 0}
+.hero-img img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:#fff}
+.hero-img figcaption{color:var(--muted);font-size:.9rem;margin-top:.5rem}
