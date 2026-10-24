@@ -26,10 +26,15 @@
     h('a', { 'class': 'btn', href: p.repo, text: 'Code source' })
   ]);
 
+  var figure = p.image ? h('figure', { 'class': 'hero-img' }, [
+    h('img', { src: p.image, alt: p.imageAlt || '' }),
+    p.imageAlt ? h('figcaption', { text: p.imageAlt }) : null
+  ]) : null;
+  
   var article = h('article', {}, [
     h('h1', { text: p.title }),
     h('div', { 'class': 'meta', text: p.date }),
-    list(p.tags, 'tags'), author,
+    list(p.tags, 'tags'), figure, author,
     h('p', { 'class': 'lead', text: p.lead }), stack
   ]);
 
