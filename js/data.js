@@ -1,11 +1,4 @@
 /* DONNÉES : le seul fichier à modifier pour ajouter ou changer des projets. */
-var ME = {
-  name: "Moussa Soulama",
-  tagline: "Étudiant ingénieur en data science à l'ENSAI",
-  github: "https://github.com/TON-PSEUDO",
-  linkedin: "https://www.linkedin.com/in/TON-PROFIL"
-};
-
 var PROJECTS = [
   {
     id: "projet-1",
