@@ -33,5 +33,5 @@ var PROJECTS = [
       ["Limites", "Jeu de test court. Pistes : validation sur plusieurs fenêtres chronologiques, comparaison à une prévision de référence simple, ARIMA plus parcimonieux."],
       ["Équipe", "Projet réalisé en groupe avec Oumar Kaboré et Nestor Cédric Nana."]
     ]
-  },
+  }
 ];
