@@ -7,7 +7,41 @@ var ME = {
 };
 
 var PROJECTS = [
+  
+  {
+  id: "ipoo-sports-data",
+  title: "IPOO : traitement et exploration de données sportives multi-disciplines",
+  date: "18 Janvier Au 17 Avril 2026",
+  summary: "Comment concevoir une application capable de traiter et d'explorer des données sportives hétérogènes ? Développement d'un outil Python appliqué au football, tennis, basketball et aux échecs.",
+  image: "images/sport.jpg",
+  tags: ["Python", "Data Processing", "Développement logiciel"],
+  stack: ["Python", "Streamlit", "Programmation orientée objet", "Tests unitaires", "Ruff"],
+  repo: "URL_GITHUB_A_COMPLETER",
+  lead: "Développer une application modulaire capable de traiter différentes structures de données sportives et de rendre leur exploitation accessible à travers une interface interactive.",
+  stats: [
+    ["4", "disciplines sportives étudiées"],
+    ["4", "jeux de données exploités"],
+    ["1", "application interactive développée avec Streamlit"]
+  ],
+  sections: [
+    ["Objectif", "Les données sportives proviennent de sources variées et présentent des structures différentes selon les disciplines. L'objectif est de concevoir une application générique permettant d'importer, de traiter, de structurer et d'explorer ces données, tout en proposant une interface facilitant leur exploitation."],
 
+    ["Données", "Quatre cas d'application ont été étudiés : la Ligue 1 française (saison 2015-2016), l'ATP Tour 2024, la NBA (saison 2022-2023) et un tournoi d'échecs. Cette diversité permet de confronter les traitements à des structures de données hétérogènes et à des problématiques propres à chaque discipline."],
+
+    ["Démarche", "Analyse des structures des jeux de données, conception de traitements adaptés à chaque discipline, organisation des opérations de manipulation des données et développement de fonctionnalités d'exploration. L'enjeu est de mutualiser les traitements communs tout en préservant les spécificités de chaque source."],
+
+    ["Architecture logicielle", "Développement d'une architecture modulaire en programmation orientée objet, organisée autour de packages dédiés aux modèles, à la manipulation des données et aux services. Une interface interactive avec Streamlit permet d'accéder aux fonctionnalités de l'application. Un mécanisme de configuration facilite son adaptation aux différents cas d'utilisation."],
+
+    ["Résultats", "Développement d'une application de traitement et d'exploration de données validée sur quatre contextes sportifs : football, tennis, basketball et échecs. La conception modulaire permet de prendre en charge des structures de données différentes au sein d'un même environnement applicatif."],
+
+    ["Assurance qualité", "Mise en place de tests unitaires et de tests de couverture pour vérifier la fiabilité des traitements. Utilisation de Ruff pour contrôler la qualité et le style du code Python, ainsi que rédaction d'une documentation technique pour faciliter la maintenance et l'évolution de l'application."],
+
+    ["Conclusion", "Ce projet m'a permis de mobiliser des compétences en traitement de données et en ingénierie logicielle, depuis l'analyse des structures sources jusqu'au développement d'une application interactive. Il met en évidence l'importance de la modularité, de la réutilisabilité du code et de la validation des traitements dans la conception d'outils de données."],
+
+    ["Perspectives", "Étendre l'application à de nouvelles disciplines sportives, enrichir les fonctionnalités d'analyse statistique et de visualisation, et automatiser davantage les étapes de préparation des données afin de renforcer la généricité et la robustesse de l'outil."]
+  ]
+},
+  
   {
     id: "energy-customer-churn",
     title: "Prédiction du désabonnement client dans le secteur de l'énergie",
