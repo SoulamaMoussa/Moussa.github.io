@@ -1,136 +1,63 @@
-/* Organisation générale du CV */
+/* Page « Mon CV » */
+[hidden]{display:none!important}
+.cv-intro{margin:1rem 0 1.5rem}
+.cv-section{margin:3rem 0;scroll-margin-top:1.5rem}
+.cv-section h2{margin:0 0 1.2rem}
+.toc a.active{color:var(--accent);font-weight:600}
 
-.cv-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(150px, 0.7fr);
-  gap: 70px;
-  max-width: 1050px;
-  margin: 45px auto;
-  align-items: start;
+/* Onglets avec compteurs */
+.cv-tabs{display:inline-flex;flex-wrap:wrap;gap:.25rem;padding:.3rem;margin-bottom:1.5rem;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.cv-tab{display:inline-flex;align-items:center;gap:.5rem;border:0;background:none;color:var(--ink);font:inherit;font-weight:600;padding:.4rem 1rem;border-radius:999px;cursor:pointer}
+.cv-tab[aria-selected="true"]{background:var(--accent);color:var(--onaccent)}
+.cv-count{min-width:1.5rem;text-align:center;padding:0 .45rem;border-radius:999px;font-size:.85rem;background:rgba(127,127,127,.22)}
+
+/* Frise chronologique */
+.tl{list-style:none;margin:0;padding:0}
+.tl-item{position:relative;padding-left:4.25rem;margin-bottom:1.5rem}
+.tl-item::before{content:"";position:absolute;left:1.5rem;top:3.4rem;bottom:-1.5rem;width:2px;background:var(--dot)}
+.tl-item:last-child::before{display:none}
+.tl-icon{position:absolute;left:0;top:.2rem;width:3rem;height:3rem;display:grid;place-items:center;border-radius:10px;background:var(--accent);color:var(--onaccent);box-shadow:0 0 0 3px var(--bg)}
+.tl-card{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:1.1rem 1.3rem}
+.tl-date{font:.82rem ui-monospace,Menlo,Consolas,monospace;color:var(--muted)}
+.tl-card h3{font-size:1.3rem;margin:.25rem 0}
+.tl-card h3 a{color:var(--ink);text-decoration:none}
+.tl-card h3 a:hover{color:var(--accent)}
+.tl-org{color:var(--muted)}
+.tl-org strong{color:var(--accent)}
+.badge-current{display:inline-block;margin-left:.5rem;padding:0 .6rem;border:1px solid var(--dot);color:var(--dot);border-radius:999px;font-size:.75rem;font-weight:600}
+.tl-card p{margin:.7rem 0 0}
+.tl-bullets{list-style:none;margin:.8rem 0 0;padding:0}
+.tl-bullets li{position:relative;padding-left:1.1rem;margin:.35rem 0}
+.tl-bullets li::before{content:"–";position:absolute;left:0;color:var(--dot);font-weight:700}
+
+/* Tableaux Formation et Compétences */
+.table-wrap{overflow-x:auto}
+.cv-table{width:100%;border-collapse:collapse}
+.cv-table th{text-align:left;font-size:.9rem;padding:.6rem .75rem;border-bottom:1px solid var(--muted)}
+.cv-table td,.cv-table tbody th{padding:.9rem .75rem;vertical-align:top}
+.cv-table tbody th{font-size:1rem;width:32%}
+.cv-table .ico{width:4rem}
+.cv-icon{width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:10px;background:var(--accent);color:var(--onaccent)}
+.cv-table .org{color:var(--accent)}
+.meta{color:var(--muted);font-size:.9rem}
+
+/* Certifications */
+.certs{list-style:none;margin:0;padding:0}
+.certs li{display:grid;grid-template-columns:4rem 1fr auto;gap:1rem;align-items:center;margin-bottom:1rem}
+
+@media (max-width:600px){
+  .tl-item{padding-left:3.4rem}
+  .tl-item::before{left:1.15rem}
+  .tl-icon{width:2.4rem;height:2.4rem}
+  .tl-card{padding:.9rem 1rem}
+  .cv-table tbody th{width:38%}
 }
 
-.cv-content {
-  min-width: 0;
-}
-
-.cv-intro {
-  margin: 35px 0 55px;
-  line-height: 1.7;
-}
-
-.cv-section {
-  margin: 55px 0;
-  scroll-margin-top: 100px;
-}
-
-.cv-section h2 {
-  margin-bottom: 30px;
-}
-
-/* Expériences et formations */
-
-.cv-item {
-  position: relative;
-  padding: 20px 24px;
-  margin-bottom: 22px;
-  border: 1px solid var(--border, #ddd);
-  border-radius: 12px;
-  background: var(--surface, rgba(255,255,255,0.65));
-}
-
-.cv-item h3 {
-  margin: 8px 0;
-}
-
-.cv-date {
-  font-size: 0.85rem;
-  color: var(--muted, #777);
-}
-
-.cv-place {
-  font-weight: 600;
-  color: var(--accent, #356b35);
-}
-
-.cv-tags {
-  font-size: 0.9rem;
-  color: var(--muted, #777);
-}
-
-/* Sommaire latéral */
-
-.cv-sidebar {
-  position: sticky;
-  top: 110px;
-  border-left: 1px solid var(--border, #ccc);
-  padding: 15px 0 15px 20px;
-}
-
-.cv-sidebar nav {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-}
-
-.cv-sidebar a {
-  text-decoration: none;
-  color: var(--text, inherit);
-}
-
-.cv-sidebar a:hover {
-  color: var(--accent, #356b35);
-}
-
-/* Tableau des compétences */
-
-.cv-skills {
-  width: 100%;
-  border-collapse: collapse;
-  line-height: 1.6;
-}
-
-.cv-skills th,
-.cv-skills td {
-  text-align: left;
-  padding: 13px 10px;
-  border-bottom: 1px solid var(--border, #ddd);
-  vertical-align: top;
-}
-
-.cv-skills th:first-child,
-.cv-skills td:first-child {
-  font-weight: 600;
-  width: 32%;
-}
-
-/* Responsive */
-
-@media (max-width: 750px) {
-  .cv-layout {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin: 25px auto;
-  }
-
-  .cv-sidebar {
-    position: static;
-    grid-row: 1;
-    border-left: none;
-    border-bottom: 1px solid var(--border, #ccc);
-    padding: 0 0 15px;
-  }
-
-  .cv-sidebar nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .cv-item {
-    padding: 16px;
-  }
-
-  .cv-skills {
-    font-size: 0.9rem;
-  }
-}
+/* Tâches, liens vers les projets */
+.tl-sub{margin-top:.9rem;font-weight:600;font-size:.95rem}
+.tl-sub + .tl-bullets{margin-top:.35rem}
+.tl-links{margin:1rem 0 0!important}
+.btn-sm{display:inline-block;padding:.4rem .95rem;border-radius:8px;background:var(--accent);color:var(--onaccent);font-weight:600;font-size:.95rem;text-decoration:none}
+.btn-sm:hover{filter:brightness(1.1)}
+.tl-all{margin:.5rem 0 0 4.25rem;font-weight:600}
+@media (max-width:600px){.tl-all{margin-left:3.4rem}}
