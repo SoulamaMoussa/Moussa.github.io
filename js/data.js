@@ -15,7 +15,7 @@ var PROJECTS = [
     summary: "Quels clients risquent de quitter leur fournisseur d'énergie, et les prix jouent-ils un rôle ? Projet de classification en cours de réalisation.",
     tags: ["Python", "Machine learning", "Churn"],
     stack: ["Python", "pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn", "Jupyter"],
-    repo: "https://github.com/SoulamaMoussa/Prediction-du-desabonnement-des-clients-dans-le-secteur-de-l-energie",
+    repo: "https://github.com/SoulamaMoussa/Energy_Customer_Churn_Prediction.git",
     lead: "Repérer à temps les clients à risque de quitter un fournisseur d'énergie, et comprendre le rôle des prix dans cette décision.",
     stats: [],
     note: "Projet en cours : seul le code est consultable pour l'instant. Les résultats et la conclusion seront ajoutés à la fin de l'analyse.",
