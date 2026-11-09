@@ -7,6 +7,26 @@ var ME = {
 };
 
 var PROJECTS = [
+
+  {
+    id: "energy-customer-churn",
+    title: "Prédiction du désabonnement client dans le secteur de l'énergie",
+    date: "En cours",
+    summary: "Quels clients risquent de quitter leur fournisseur d'énergie, et les prix jouent-ils un rôle ? Projet de classification en cours de réalisation.",
+    tags: ["Python", "Machine learning", "Churn"],
+    stack: ["Python", "pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn", "Jupyter"],
+    repo: "https://github.com/SoulamaMoussa/Prediction-du-desabonnement-des-clients-dans-le-secteur-de-l-energie",
+    lead: "Repérer à temps les clients à risque de quitter un fournisseur d'énergie, et comprendre le rôle des prix dans cette décision.",
+    stats: [],
+    note: "Projet en cours : seul le code est consultable pour l'instant. Les résultats et la conclusion seront ajoutés à la fin de l'analyse.",
+    sections: [
+      ["Objectif", "Un fournisseur d'énergie perd des revenus quand un client le quitte, et recruter un nouveau client coûte cher. Le projet cherche à identifier les caractéristiques associées au désabonnement, à étudier le rôle des prix et de leurs variations, et à évaluer dans quelle mesure des modèles de classification repèrent les clients à risque."],
+      ["Données", "Deux jeux de données reliés par l'identifiant client : les caractéristiques des clients (contrat, consommation, indicateurs financiers, départ ou non) et l'historique des prix de l'énergie (heures pleines et creuses)."],
+      ["Démarche prévue", "Analyse exploratoire, création d'indicateurs de variation des prix, puis entraînement et comparaison de modèles de classification. L'évaluation s'appuiera sur des métriques adaptées aux classes déséquilibrées (matrice de confusion, précision, rappel, F1-score, ROC-AUC), avec une attention particulière aux faux négatifs."],
+      ["Statut", "Le dépôt contient le code et les notebooks de travail. Je publierai les résultats et leur interprétation une fois l'analyse terminée."]
+    ]
+  },
+  
     {
     id: "malnutrition-nouna",
     title: "Malnutrition infantile à Nouna : dépendance spatiale et facteurs associés",
