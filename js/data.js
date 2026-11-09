@@ -10,13 +10,13 @@ var PROJECTS = [
   
   {
   id: "ipoo-sports-data",
-  title: "IPOO : traitement et exploration de données sportives multi-disciplines",
+  title: "Application de gestion des résultats sportifs",
   date: "18 Janvier Au 17 Avril 2026",
   summary: "Comment concevoir une application capable de traiter et d'explorer des données sportives hétérogènes ? Développement d'un outil Python appliqué au football, tennis, basketball et aux échecs.",
   image: "images/sport.jpg",
-  tags: ["Python", "Data Processing", "Développement logiciel"],
-  stack: ["Python", "Streamlit", "Programmation orientée objet", "Tests unitaires", "Ruff"],
-  repo: "URL_GITHUB_A_COMPLETER",
+  tags: ["Python", "Data Processing", "Développement logiciel", "Programmation orientée objet", "Gestion de base de données"],
+  stack: ["Python","SQL", "Streamlit", "pytest", "Git", "Ruff", ],
+  repo: "https://github.com/salifsamake10/Sports-Data-App.git",
   lead: "Développer une application modulaire capable de traiter différentes structures de données sportives et de rendre leur exploitation accessible à travers une interface interactive.",
   stats: [
     ["4", "disciplines sportives étudiées"],
