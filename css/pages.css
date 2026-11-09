@@ -1,0 +1,14 @@
+/* Pages « À propos de moi » et « Contact » */
+.facts{display:grid;grid-template-columns:9rem 1fr;gap:.9rem 1.5rem;max-width:44rem;margin:1rem 0 2rem;padding:1.2rem 1.4rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.facts dt{font-weight:600;color:var(--muted)}
+.facts dd{margin:0}
+.contact-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem 1.4rem;margin:1rem 0 .5rem}
+.next-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;margin-top:1rem}
+.next-links a{display:block;padding:1rem 1.2rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none}
+.next-links a:hover{border-color:var(--accent)}
+.next-links strong{display:block;font:700 1.1rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--accent)}
+.next-links span{color:var(--muted);font-size:.95rem}
+@media (max-width:600px){
+  .facts{grid-template-columns:1fr;gap:.15rem}
+  .facts dd{margin-bottom:.8rem}
+}
