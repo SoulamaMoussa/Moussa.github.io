@@ -1,0 +1,230 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CV – Moussa Soulama</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cv.css">
+</head>
+
+<body>
+
+<div class="wrap">
+
+<header>
+  <a class="brand" href="index.html">Moussa Soulama</a>
+
+  <nav aria-label="Navigation principale">
+
+    <div class="nav-dropdown">
+      <details open>
+        <summary>À propos</summary>
+        <div class="dropdown-menu">
+          <a href="index.html">À propos de moi</a>
+          <a href="cv.html" aria-current="page">Mon CV</a>
+        </div>
+      </details>
+    </div>
+
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+
+    <button id="theme" type="button" aria-label="Changer de thème">
+      Thème
+    </button>
+
+  </nav>
+</header>
+
+<main id="app" class="cv-layout">
+
+  <div class="cv-content">
+
+    <h1>Curriculum Vitae</h1>
+
+    <div class="cv-intro">
+      <h2>Moussa Soulama</h2>
+
+      <p class="lead">
+        Étudiant ingénieur en Data Science à l'ENSAI
+      </p>
+
+      <p>
+        Étudiant en deuxième année du cycle ingénieur à l'ENSAI,
+        je développe des compétences en statistique, traitement
+        de données et apprentissage automatique. Je m'intéresse
+        particulièrement aux applications de la Data Science
+        dans les secteurs financier, bancaire et de la santé.
+      </p>
+
+      <p>
+        <a href="mailto:TON-EMAIL@EXEMPLE.FR">E-mail</a>
+        ·
+        <a href="https://www.linkedin.com/in/moussa-soulama">LinkedIn</a>
+        ·
+        <a href="https://github.com/SoulamaMoussa">GitHub</a>
+      </p>
+    </div>
+
+    <section id="experience" class="cv-section">
+      <h2>Expériences professionnelles</h2>
+
+      <article class="cv-item">
+        <span class="cv-date">Décembre 2025 – Mars 2026</span>
+        <h3>Agent d'entretien</h3>
+        <p class="cv-place">PCHIT · Betton, France</p>
+        <p>
+          Entretien des locaux, application des protocoles
+          de nettoyage et respect des exigences de qualité.
+        </p>
+      </article>
+
+      <article class="cv-item">
+        <span class="cv-date">Août – Décembre 2025</span>
+        <h3>Aide cuisinier</h3>
+        <p class="cv-place">La Taverne · Rennes, France</p>
+        <p>
+          Préparation et organisation du travail en cuisine,
+          respect des procédures d'hygiène et coordination
+          avec l'équipe.
+        </p>
+      </article>
+
+      <article class="cv-item">
+        <span class="cv-date">Juillet 2025</span>
+        <h3>Commis de cuisine</h3>
+        <p class="cv-place">Les Fils à Maman · Rennes, France</p>
+        <p>
+          Participation à la préparation des plats et au
+          fonctionnement du service en restauration.
+        </p>
+      </article>
+    </section>
+
+    <section id="education" class="cv-section">
+      <h2>Formation</h2>
+
+      <article class="cv-item">
+        <span class="cv-date">2025 – 2027</span>
+        <h3>Cycle ingénieur – Data Science</h3>
+        <p class="cv-place">ENSAI · Rennes, France</p>
+        <p>
+          Formation en statistique, apprentissage automatique,
+          modélisation et traitement de données.
+        </p>
+      </article>
+
+      <article class="cv-item">
+        <span class="cv-date">Avant 2025</span>
+        <h3>Licence Statistique-Informatique</h3>
+        <p class="cv-place">Université Nazi Boni · Burkina Faso</p>
+      </article>
+
+      <article class="cv-item">
+        <h3>Baccalauréat général – Série D</h3>
+        <p class="cv-place">Burkina Faso</p>
+      </article>
+    </section>
+
+    <section id="projects" class="cv-section">
+      <h2>Projets académiques et personnels</h2>
+
+      <article class="cv-item">
+        <h3>Prédiction du désabonnement client dans l'énergie</h3>
+        <p>
+          Analyse exploratoire, ingénierie des variables et
+          modélisation prédictive à partir de données clients
+          et tarifaires.
+        </p>
+        <p class="cv-tags">Python · Pandas · Scikit-learn · Machine Learning</p>
+      </article>
+
+      <article class="cv-item">
+        <h3>Malnutrition infantile à Nouna</h3>
+        <p>
+          Analyse de la dépendance spatiale et identification
+          des facteurs associés à la malnutrition chez les
+          enfants de moins de cinq ans.
+        </p>
+        <p class="cv-tags">Statistique spatiale · Régression logistique</p>
+      </article>
+
+      <article class="cv-item">
+        <h3>Prévision de l'indice des prix au Burkina Faso</h3>
+        <p>
+          Comparaison de méthodes de prévision sur une série
+          temporelle mensuelle de l'indice des prix à la consommation.
+        </p>
+        <p class="cv-tags">R · Séries temporelles · ARIMA</p>
+      </article>
+    </section>
+
+    <section id="skills" class="cv-section">
+      <h2>Compétences</h2>
+
+      <table class="cv-skills">
+        <tr>
+          <th>Catégorie</th>
+          <th>Compétences et technologies</th>
+        </tr>
+
+        <tr>
+          <td>Langages</td>
+          <td>Python, R, SQL</td>
+        </tr>
+
+        <tr>
+          <td>Statistiques</td>
+          <td>Statistique inférentielle, régression, sondages, séries temporelles</td>
+        </tr>
+
+        <tr>
+          <td>Machine Learning</td>
+          <td>Classification, régression, Random Forest, évaluation de modèles</td>
+        </tr>
+
+        <tr>
+          <td>Data Processing</td>
+          <td>Pandas, NumPy, nettoyage et préparation des données</td>
+        </tr>
+
+        <tr>
+          <td>Visualisation</td>
+          <td>Matplotlib, Seaborn, Streamlit</td>
+        </tr>
+
+        <tr>
+          <td>Outils</td>
+          <td>Git, GitHub, Jupyter, VS Code, PostgreSQL</td>
+        </tr>
+      </table>
+    </section>
+
+  </div>
+
+  <aside class="cv-sidebar">
+    <nav aria-label="Sommaire du CV">
+      <a href="#experience">Expériences</a>
+      <a href="#education">Formation</a>
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+    </nav>
+  </aside>
+
+</main>
+
+<footer>© 2026 Moussa Soulama</footer>
+
+</div>
+
+<script src="js/theme.js"></script>
+
+</body>
+</html>
+```
