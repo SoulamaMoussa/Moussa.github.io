@@ -83,11 +83,12 @@ var CV = {
   certifications: [],   /* ex. { name: "Nom", issuer: "Organisme", period: "2026", logo: "images/logo.png", link: "https://..." } */
 
   skills: [
-    ["Langages", "Python, R, SQL"],
-    ["Statistiques", "Statistique inférentielle, régression, sondages, séries temporelles"],
-    ["Machine learning", "Classification, régression, Random Forest, évaluation de modèles"],
-    ["Traitement de données", "Pandas, NumPy, nettoyage et préparation des données"],
-    ["Visualisation", "Matplotlib, Seaborn, Streamlit"],
-    ["Outils", "Git, GitHub, Jupyter, VS Code, PostgreSQL"]
+    ["Langages", "Python, R, SQL, Git, C++"],
+    ["Statistiques", "Statistique inférentielle, Sondages, "],
+    ["Apprentissage supervisé", "Séries temporelles, Classification, Régression linéaires généralisées, Random Forest, KNN, QDA, LDA"],
+     ["Apprentisage non supervisée", "K-means, CAH, ACP, MCA, AFC"]
+    ["Traitement de données", "Pandas, NumPy, tidyverse"],
+    ["Visualisation des données et Data Storytelling", "ggplot, Matplotlib, Seaborn, Streamlit"],
+    ["Outils et bibliotheques", "GitHub, Jupyter, VS Code, PostgreSQL,"]
   ]
 };
