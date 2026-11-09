@@ -2,7 +2,7 @@
    Les projets de l'onglet « Projets » viennent automatiquement de data.js. */
 var CV = {
   intro: "Étudiant en deuxième année du cycle ingénieur à l'ENSAI, je développe des compétences en statistique, traitement de données et apprentissage automatique. Je m'intéresse particulièrement aux applications de la Data Science dans les secteurs financier, bancaire et de la santé.",
-  email: "ton@email.fr",
+  email: "moussa.soulama@ensai.fr",
   projectsLabel: "Projets académiques et personnels",
   pdf: "",   /* ex. "cv-moussa-soulama.pdf" : le fichier doit être déposé à la racine du dépôt. Laisse vide pour masquer le bouton. */
 
