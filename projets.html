@@ -12,11 +12,41 @@
 <div class="wrap">
   <header>
     <a class="brand" href="index.html">Moussa Soulama</a>
+  
+    <!--
+    ANCIEN MENU DE NAVIGATION
+    Conservé temporairement pour permettre un retour en arrière.
+  
     <nav aria-label="Navigation principale">
-      <a href="index.html">À propos</a>
-      <a href="projets.html" aria-current="page">Projets</a>
+      <a href="index.html" aria-current="page">À propos</a>
+      <a href="projets.html">Projets</a>
       <a href="contact.html">Contact</a>
       <button id="theme" type="button" aria-label="Changer de thème">Thème</button>
+    </nav>
+    -->
+  
+    <!-- NOUVEAU MENU DE NAVIGATION -->
+    <nav aria-label="Navigation principale">
+  
+      <div class="nav-dropdown">
+        <details>
+          <summary>À propos</summary>
+  
+          <div class="dropdown-menu">
+            <a href="index.html" aria-current="page">À propos de moi</a>
+            <a href="cv.html">Mon CV</a>
+          </div>
+        </details>
+      </div>
+  
+      <a href="projets.html">Projets</a>
+  
+      <a href="contact.html">Contact</a>
+  
+      <button id="theme" type="button" aria-label="Changer de thème">
+        Thème
+      </button>
+  
     </nav>
   </header>
   <main id="app">
