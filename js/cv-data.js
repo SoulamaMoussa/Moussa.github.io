@@ -75,9 +75,9 @@ var CV = {
   ],
 
   education: [
-    { org: "ENSAI", place: "Rennes, FR", period: "2025 – 2027", degree: "Cycle ingénieur – Data Science" },
-    { org: "Université Nazi Boni", place: "Burkina Faso", period: "", degree: "Licence Statistique-Informatique" },
-    { org: "Baccalauréat général", place: "Burkina Faso", period: "", degree: "Série D" }
+    { org: "Ecole Nationale de la Statistique et de l'Analyse de l'Information - ENSAI", place: "Bruz, France", period: "2025 – 2027", degree: "Cycle ingénieur – Data Science" },
+    { org: "Université Nazi Boni", place: "Bobo-Dioulasso Burkina Faso", period: "2021-2024", degree: "Licence Statistique-Informatique" },
+    { org: "Baccalauréat général", place: "Côte d'Ivoire", period: "2020-2021", degree: "Série D" }
   ],
 
   certifications: [],   /* ex. { name: "Nom", issuer: "Organisme", period: "2026", logo: "images/logo.png", link: "https://..." } */
