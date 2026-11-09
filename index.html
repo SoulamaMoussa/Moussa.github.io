@@ -1,162 +1,58 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
 <title>Moussa Soulama – Portfolio Data Science</title>
-
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
-
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
-
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
-
 <body>
 <div class="wrap">
-
   <header>
-  <a class="brand" href="index.html">Moussa Soulama</a>
-
-  <!--
-  ANCIEN MENU DE NAVIGATION
-  Conservé temporairement pour permettre un retour en arrière.
-
-  <nav aria-label="Navigation principale">
-    <a href="index.html" aria-current="page">À propos</a>
-    <a href="projets.html">Projets</a>
-    <a href="contact.html">Contact</a>
-    <button id="theme" type="button" aria-label="Changer de thème">Thème</button>
-  </nav>
-  -->
-
-  <!-- NOUVEAU MENU DE NAVIGATION -->
-  <nav aria-label="Navigation principale">
-
-    <div class="nav-dropdown">
-      <details>
-        <summary>À propos</summary>
-
-        <div class="dropdown-menu">
-          <a href="index.html" aria-current="page">À propos de moi</a>
-          <a href="cv.html">Mon CV</a>
-        </div>
-      </details>
-    </div>
-
-    <a href="projets.html">Projets</a>
-
-    <a href="contact.html">Contact</a>
-
-    <button id="theme" type="button" aria-label="Changer de thème">
-      Thème
-    </button>
-
-  </nav>
-</header>
-
+    <a class="brand" href="index.html">Moussa Soulama</a>
+    <nav aria-label="Navigation principale">
+      <div class="nav-dropdown is-active">
+        <details>
+          <summary>À propos</summary>
+          <div class="dropdown-menu">
+            <a href="index.html" aria-current="page">À propos de moi</a>
+            <a href="cv.html">Mon CV</a>
+          </div>
+        </details>
+      </div>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+      <button id="theme" type="button" aria-label="Changer de thème">Thème</button>
+    </nav>
+  </header>
   <main id="app">
-
     <h1>Moussa Soulama</h1>
-
-    <p class="lead">
-      Étudiant ingénieur en Data Science à l'ENSAI
-    </p>
+    <p class="lead">Étudiant ingénieur en Data Science à l'ENSAI</p>
 
     <div class="text">
-
-      <p>
-        Actuellement en deuxième année du cycle ingénieur à l'ENSAI,
-        je m'intéresse à l'exploitation des données pour comprendre
-        des phénomènes complexes, construire des modèles statistiques
-        et contribuer à la prise de décision.
-      </p>
-
-      <p>
-        Ma formation me permet de développer des compétences en
-        statistique, apprentissage automatique et traitement de données.
-        Je travaille principalement avec Python et R, et je mobilise
-        ces outils dans des projets allant de l'analyse exploratoire
-        à la construction et à l'évaluation de modèles prédictifs.
-      </p>
-
-      <p>
-        Je porte un intérêt particulier aux applications de la Data
-        Science dans les secteurs financier et bancaire, notamment
-        l'analyse des risques, le scoring et la détection de la fraude,
-        ainsi que dans le domaine de la santé, à travers la
-        biostatistique et l'analyse de données médicales.
-      </p>
-
-      <p>
-        À travers mes projets, je cherche à associer rigueur
-        statistique, maîtrise technique et compréhension des
-        problématiques métier, afin de produire des analyses
-        pertinentes et des résultats exploitables.
-      </p>
-
+      <p>Je suis en deuxième année du cycle ingénieur à l'ENSAI, à Rennes. Ce qui m'attire dans la data science, c'est de comprendre des phénomènes complexes à partir des données et de contribuer à mieux décider.</p>
+      <p>Mon parcours commence au Burkina Faso, où j'ai étudié la statistique et l'informatique, avant de rejoindre l'ENSAI en France. Au Centre de Recherche en Santé de Nouna, j'ai d'abord encadré la collecte d'une enquête de santé, puis analysé la malnutrition infantile : j'ai ainsi vu les données de leur production jusqu'à leur interprétation.</p>
     </div>
 
-    <h2>Domaines d'intérêt</h2>
+    <h2>Ma façon de travailler</h2>
+    <div class="text">
+      <p>À travers mes projets, je cherche à associer rigueur statistique, maîtrise technique et compréhension des problématiques métier, afin de produire des analyses pertinentes et des résultats exploitables.</p>
+      <p>Je suis particulièrement curieux des applications de la data science à la santé, avec la biostatistique, et à la finance, avec l'analyse des risques.</p>
+    </div>
 
-    <ul class="skills">
-      <li>Finance et banque</li>
-      <li>Gestion des risques</li>
-      <li>Scoring et détection de fraude</li>
-      <li>Santé et biostatistique</li>
-      <li>Modélisation prédictive</li>
-      <li>Analyse statistique</li>
-    </ul>
-
-    <h2>Compétences techniques</h2>
-
-    <ul class="skills">
-      <li>Python</li>
-      <li>R</li>
-      <li>SQL</li>
-      <li>Statistiques</li>
-      <li>Machine Learning</li>
-      <li>Traitement de données</li>
-      <li>Data Visualisation</li>
-      <li>Git</li>
-    </ul>
-
-    <h2>Quelques projets</h2>
-
-    <p>
-      Mes projets me permettent de mettre en pratique mes connaissances
-      sur des problématiques variées : prévision économique, analyse
-      spatiale en santé publique, traitement de données sportives
-      et prédiction du désabonnement client dans le secteur de l'énergie.
-    </p>
-
-    <p>
-      <a href="projets.html">Découvrir mes projets</a>
-    </p>
-
-    <h2>Parcours et contact</h2>
-
-    <p>
-      Je suis actuellement à la recherche d'un stage en Data Science,
-      statistique ou analyse de données, avec un intérêt particulier
-      pour les secteurs financier, bancaire et de la santé.
-    </p>
-
-    <p>
-      <a href="contact.html">En savoir plus sur ma recherche de stage</a>
-    </p>
-
+    <h2>Pour aller plus loin</h2>
+    <div class="next-links">
+      <a href="cv.html"><strong>Mon CV</strong><span>Mon parcours, ma formation et mes compétences</span></a>
+      <a href="projets.html"><strong>Mes projets</strong><span>Les réalisations en détail, avec le code</span></a>
+      <a href="contact.html"><strong>Me contacter</strong><span>Ma recherche de stage et mes coordonnées</span></a>
+    </div>
   </main>
-
-  <footer>
-    © 2026 Moussa Soulama
-  </footer>
-
+  <footer>© 2026 Moussa Soulama</footer>
 </div>
-
 <script src="js/theme.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>
-```
