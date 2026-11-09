@@ -56,96 +56,16 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 3rem;color:var(--muted)
    MENU DÉROULANT « À PROPOS »
 ========================================= */
 
-.nav-dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Élément déclencheur */
-.nav-dropdown details {
-  position: relative;
-}
-
-.nav-dropdown summary {
-  list-style: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--ink);
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-dropdown summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Petite flèche */
-.nav-dropdown summary::after {
-  content: "⌄";
-  font-size: 13px;
-  transition: transform 0.2s ease;
-}
-
-.nav-dropdown details[open] summary::after {
-  transform: rotate(180deg);
-}
-
-/* Contenu du menu */
-.nav-dropdown .dropdown-menu {
-  position: absolute;
-  top: calc(100% + 12px);
-  left: 0;
-  min-width: 190px;
-  padding: 8px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-
-  z-index: 100;
-}
-
-/* Liens du menu */
-.nav-dropdown .dropdown-menu a {
-  display: block;
-  padding: 9px 12px;
-  border: none;
-  border-radius: 6px;
-  color: var(--ink);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.nav-dropdown .dropdown-menu a:hover {
-  background: var(--bg);
-  color: var(--accent);
-  border: none;
-}
-
-/* Surbrillance de la page actuelle */
-.nav-dropdown .dropdown-menu a[aria-current="page"] {
-  color: var(--accent);
-  background: var(--bg);
-}
-
-/* Accessibilité */
-.nav-dropdown summary:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 4px;
-  border-radius: 4px;
-}
-
-/* Adaptation aux petits écrans */
-@media (max-width: 600px) {
-  .nav-dropdown .dropdown-menu {
-    left: auto;
-    right: 0;
-  }
-}
+/* Menu déroulant « À propos » — à ajouter à la fin de css/style.css
+   (supprime d'abord l'ancien bloc « Menu déroulant À propos » s'il existe) */
+.nav-dropdown{position:relative}
+.nav-dropdown summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:.4rem;font-weight:600;border-bottom:2px solid transparent}
+.nav-dropdown summary::-webkit-details-marker{display:none}
+.nav-dropdown summary::after{content:"";width:.4rem;height:.4rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
+.nav-dropdown details[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+.nav-dropdown summary:hover,.nav-dropdown.is-active summary{border-color:var(--accent)}
+.dropdown-menu{position:absolute;top:calc(100% + .6rem);left:0;min-width:12rem;padding:.4rem;display:flex;flex-direction:column;gap:.2rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.14);z-index:100}
+.dropdown-menu a{display:block;padding:.55rem .75rem;border-radius:6px;border-bottom:0;white-space:nowrap}
+.dropdown-menu a:hover{background:var(--bg)}
+.dropdown-menu a[aria-current="page"]{background:var(--bg);color:var(--accent)}
+@media (max-width:600px){.dropdown-menu{left:auto;right:0}}
