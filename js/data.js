@@ -10,7 +10,7 @@ var PROJECTS = [
     {
     id: "malnutrition-nouna",
     title: "Malnutrition infantile à Nouna : dépendance spatiale et facteurs associés",
-    date: "Stage et mémoire de fin de cycle",
+    date: "12 Décembre 2024 Au 12 Mars 2025",
     summary: "Où la malnutrition se concentre-t-elle chez les enfants de moins de 5 ans, et pourquoi ? Analyse spatiale sur 1 999 enfants.",
     tags: ["Statistique spatiale", "Santé publique", "Régression logistique"],
     stack: ["Indice de Moran", "Régression logistique ordinale", "Données climatiques"],
