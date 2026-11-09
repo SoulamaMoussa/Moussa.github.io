@@ -37,7 +37,7 @@ var CV = {
       icon: "job",
       items: [
         {
-          period: "Déc. 2024 – Mars 2025",
+          period: "Décembre 2024 – Mars 2025",
           duration: "4 mois",
           title: "Data Analyst (stage)",
           org: "Centre de Recherche en Santé de Nouna (CRSN)",
@@ -54,7 +54,7 @@ var CV = {
           links: [["Voir le projet et le code", "projet.html?id=malnutrition-nouna"]]
         },
         {
-          period: "Août – Déc. 2024",
+          period: "Août – Décembre 2024",
           duration: "5 mois",
           title: "Superviseur de données d'enquête (CDD temps partiel)",
           org: "Centre de Recherche en Santé de Nouna (CRSN)",
@@ -65,7 +65,7 @@ var CV = {
             ["Assistance technique", "appui sur tablettes pour faciliter la collecte des données"],
             ["Qualité des données", "vérification de la cohérence et de la qualité des données collectées"],
             ["Retours correctifs", "retours aux enquêteurs en cas d'erreurs et validation finale des questionnaires"],
-            ["Suivi de l'étude", "production de tableaux de bord hebdomadaires et d'analyses descriptives"],
+            ["Suivi de l'étude", "production de tableaux de bord hebdomadaires et d'analyses ad-hoc"],
             ["Reporting", "comptes rendus réguliers au responsable du projet sur l'avancement et la qualité des données"]
           ],
           tags: ["Analyse de données", "Contrôle qualité", "Reporting", "Communication"]
