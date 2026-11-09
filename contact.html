@@ -4,144 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contact – Moussa Soulama</title>
-
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
-
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
-
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
-
 <body>
 <div class="wrap">
-
   <header>
     <a class="brand" href="index.html">Moussa Soulama</a>
-  
-    <!--
-    ANCIEN MENU DE NAVIGATION
-    Conservé temporairement pour permettre un retour en arrière.
-  
     <nav aria-label="Navigation principale">
-      <a href="index.html" aria-current="page">À propos</a>
-      <a href="projets.html">Projets</a>
-      <a href="contact.html">Contact</a>
-      <button id="theme" type="button" aria-label="Changer de thème">Thème</button>
-    </nav>
-    -->
-  
-    <!-- NOUVEAU MENU DE NAVIGATION -->
-    <nav aria-label="Navigation principale">
-  
       <div class="nav-dropdown">
         <details>
           <summary>À propos</summary>
-  
           <div class="dropdown-menu">
-            <a href="index.html" aria-current="page">À propos de moi</a>
+            <a href="index.html">À propos de moi</a>
             <a href="cv.html">Mon CV</a>
           </div>
         </details>
       </div>
-  
       <a href="projets.html">Projets</a>
-  
-      <a href="contact.html">Contact</a>
-  
-      <button id="theme" type="button" aria-label="Changer de thème">
-        Thème
-      </button>
-  
+      <a href="contact.html" aria-current="page">Contact</a>
+      <button id="theme" type="button" aria-label="Changer de thème">Thème</button>
     </nav>
   </header>
-
   <main id="app">
-
     <h1>Construisons quelque chose ensemble.</h1>
+    <p class="lead">Je recherche un stage de trois mois en data science à partir de mai 2027.</p>
 
-    <p class="lead">
-      Étudiant ingénieur en Data Science à l'ENSAI, je recherche un stage
-      pour mettre mes compétences en statistique, analyse de données et
-      machine learning au service de problématiques concrètes.
-    </p>
+    <h2>Ma recherche de stage</h2>
+    <dl class="facts">
+      <dt>Poste visé</dt><dd>Stage en data science, statistique ou analyse de données</dd>
+      <dt>Durée</dt><dd>3 mois</dd>
+      <dt>Début</dt><dd>À partir de mai 2027</dd>
+      <dt>Secteurs</dt><dd>Finance et banque (analyse des risques, scoring, détection de la fraude) ; santé (biostatistique, données médicales)</dd>
+      <dt>Missions</dt><dd>Analyse exploratoire et préparation de données, modélisation statistique et machine learning, évaluation de modèles prédictifs, aide à la décision</dd>
+    </dl>
 
-    <section>
-      <h2>Ma recherche de stage</h2>
-
-      <p>
-        Je souhaite rejoindre une équipe où l'exploitation des données
-        contribue à la compréhension de phénomènes complexes, à
-        l'amélioration de la prise de décision et au développement
-        de solutions fondées sur les données.
-      </p>
-
-      <p>
-        Je m'intéresse particulièrement aux secteurs suivants :
-      </p>
-
-      <h3>Finance et secteur bancaire</h3>
-
-      <p>
-        Analyse des risques, scoring crédit, détection de la fraude,
-        modélisation statistique et prévision. Je souhaite contribuer
-        à l'exploitation des données pour mieux évaluer les risques
-        et accompagner les décisions financières.
-      </p>
-
-      <h3>Santé</h3>
-
-      <p>
-        Analyse de données médicales, épidémiologie
-        et modélisation des phénomènes de santé. Je suis intéressé
-        par les approches statistiques et prédictives permettant
-        de mieux comprendre les facteurs associés aux problèmes
-        de santé et d'éclairer les décisions.
-      </p>
-    </section>
-
-    <section>
-      <h2>Les missions qui m'intéressent</h2>
-
-      <ul>
-        <li>Analyse exploratoire et préparation de données.</li>
-        <li>Modélisation statistique et machine learning.</li>
-        <li>Développement et évaluation de modèles prédictifs.</li>
-        <li>Analyse des risques et détection de comportements atypiques.</li>
-        <li>Valorisation des données et aide à la décision.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Échangeons</h2>
-
-      <p>
-        Vous avez une opportunité de stage ou souhaitez discuter
-        d'un projet autour de la Data Science ?
-        Je serai heureux d'échanger avec vous.
-      </p>
-
-      <p>
-        <a href="moussa.soulama@eleve.ensai.fr">
-          Me contacter par e-mail
-        </a>
-      </p>
-
-      <p>
+    <h2>Me joindre</h2>
+    <p>Vous avez une opportunité de stage ou souhaitez discuter d'un projet ? Je serai heureux d'échanger avec vous.</p>
+    <div class="contact-actions">
+      <a class="btn" href="mailto:moussa.soulama@eleve.ensai.fr">Me contacter par e-mail</a>
+      <span>
         <a href="https://www.linkedin.com/in/moussa-soulama" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         ·
         <a href="https://github.com/SoulamaMoussa" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-    </section>
-
+        ·
+        <a href="cv.html">Mon CV</a>
+      </span>
+    </div>
   </main>
-
-  <footer>
-    © 2026 Moussa Soulama
-  </footer>
-
+  <footer>© 2026 Moussa Soulama</footer>
 </div>
-
 <script src="js/theme.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>
-```
