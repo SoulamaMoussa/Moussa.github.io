@@ -14,7 +14,7 @@ var PROJECTS = [
     summary: "Où la malnutrition se concentre-t-elle chez les enfants de moins de 5 ans, et pourquoi ? Analyse spatiale sur 1 999 enfants.",
     tags: ["Statistique spatiale", "Santé publique", "Régression logistique"],
     stack: ["Indice de Moran", "Régression logistique ordinale", "Données climatiques"],
-    repo: "https://github.com/SoulamaMoussa/malnutrition-infantile-nouna",
+    repo: "https://github.com/SoulamaMoussa/child_malnutrition_spatial.git",
     lead: "Identifier les villages à risque pour aider à cibler les interventions nutritionnelles quand les moyens sont limités.",
     stats: [
       ["46 %", "des enfants malnutris sur 1 999 étudiés"],
