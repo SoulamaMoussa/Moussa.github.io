@@ -1,0 +1,136 @@
+/* Organisation générale du CV */
+
+.cv-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(150px, 0.7fr);
+  gap: 70px;
+  max-width: 1050px;
+  margin: 45px auto;
+  align-items: start;
+}
+
+.cv-content {
+  min-width: 0;
+}
+
+.cv-intro {
+  margin: 35px 0 55px;
+  line-height: 1.7;
+}
+
+.cv-section {
+  margin: 55px 0;
+  scroll-margin-top: 100px;
+}
+
+.cv-section h2 {
+  margin-bottom: 30px;
+}
+
+/* Expériences et formations */
+
+.cv-item {
+  position: relative;
+  padding: 20px 24px;
+  margin-bottom: 22px;
+  border: 1px solid var(--border, #ddd);
+  border-radius: 12px;
+  background: var(--surface, rgba(255,255,255,0.65));
+}
+
+.cv-item h3 {
+  margin: 8px 0;
+}
+
+.cv-date {
+  font-size: 0.85rem;
+  color: var(--muted, #777);
+}
+
+.cv-place {
+  font-weight: 600;
+  color: var(--accent, #356b35);
+}
+
+.cv-tags {
+  font-size: 0.9rem;
+  color: var(--muted, #777);
+}
+
+/* Sommaire latéral */
+
+.cv-sidebar {
+  position: sticky;
+  top: 110px;
+  border-left: 1px solid var(--border, #ccc);
+  padding: 15px 0 15px 20px;
+}
+
+.cv-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.cv-sidebar a {
+  text-decoration: none;
+  color: var(--text, inherit);
+}
+
+.cv-sidebar a:hover {
+  color: var(--accent, #356b35);
+}
+
+/* Tableau des compétences */
+
+.cv-skills {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 1.6;
+}
+
+.cv-skills th,
+.cv-skills td {
+  text-align: left;
+  padding: 13px 10px;
+  border-bottom: 1px solid var(--border, #ddd);
+  vertical-align: top;
+}
+
+.cv-skills th:first-child,
+.cv-skills td:first-child {
+  font-weight: 600;
+  width: 32%;
+}
+
+/* Responsive */
+
+@media (max-width: 750px) {
+  .cv-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 25px auto;
+  }
+
+  .cv-sidebar {
+    position: static;
+    grid-row: 1;
+    border-left: none;
+    border-bottom: 1px solid var(--border, #ccc);
+    padding: 0 0 15px;
+  }
+
+  .cv-sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .cv-item {
+    padding: 16px;
+  }
+
+  .cv-skills {
+    font-size: 0.9rem;
+  }
+}
