@@ -10,12 +10,16 @@ var CV = {
      Brouillon rédigé d'après la méthode décrite de chaque projet : garde seulement ce que TU as fait
      (surtout pour les projets en groupe) et reformule avec tes mots. Format : [["Titre court", "Détail"], ...] */
   projectTasks: {
-    "malnutrition-nouna": [
-      ["Plan méthodologique", "conception du plan d'analyse de l'étude"],
-      ["Préparation des données", "nettoyage et fusion de bases de données de sources multiples"],
-      ["Analyse spatiale", "indice de Moran global et local pour repérer les foyers de malnutrition"],
-      ["Modélisation", "régression logistique ordinale sous R"],
-      ["Restitution", "interprétation des résultats et rapport final avec des recommandations pour cibler les villages à risque"]
+    "energy-customer-churn": [
+      ["Analyse exploratoire", "étude des deux jeux de données (clients et prix) et du déséquilibre de la variable cible"],
+      ["Variables", "création d'indicateurs de variation des prix"],
+      ["Modélisation", "entraînement et comparaison de modèles de classification, évaluation adaptée aux classes déséquilibrées"]
+    ],
+    "gestion-resultats-sportifs": [
+      ["Contexte", "Projet de groupe de traitement de données, en première année à l'ENSAI."],
+      ["Problème", "Comment traiter les résultats de plusieurs sports dans une même application ?"],
+      ["Méthode", "Architecture en quatre packages : modèles, données, services et interface. Configuration pilotée par des fichiers JSON. Interface avec Streamlit."],
+      ["Résultat", "Une application Python qui traite les résultats de football, tennis, basketball et échecs. Elle inclut un simulateur du tournoi MSI 2024 de League of Legends."]
     ],
     "ipc-burkina-faso": [
       ["Analyse exploratoire", "étude de la tendance et de la saisonnalité de l'indice des prix"],
@@ -23,11 +27,6 @@ var CV = {
       ["Validation", "tests de stationnarité (Dickey-Fuller), diagnostic des résidus, choix du modèle par le critère BIC"],
       ["Comparaison", "évaluation des trois méthodes par l'erreur quadratique moyenne sur des mois mis de côté"]
     ],
-    "energy-customer-churn": [
-      ["Analyse exploratoire", "étude des deux jeux de données (clients et prix) et du déséquilibre de la variable cible"],
-      ["Variables", "création d'indicateurs de variation des prix"],
-      ["Modélisation", "entraînement et comparaison de modèles de classification, évaluation adaptée aux classes déséquilibrées"]
-    ]
   },
 
   experience: [
@@ -46,8 +45,8 @@ var CV = {
           bullets: [
             ["Plan méthodologique", "conception du plan d'analyse de l'étude"],
             ["Préparation des données", "nettoyage et fusion de bases de données de sources multiples"],
-            ["Analyse spatiale", "indice de Moran global et local"],
-            ["Modélisation", "régression logistique ordinale sous R"],
+            ["Analyse spatiale", "indice de Moran global et local pour repérer les foyers de malnutrition"],
+            ["Modélisation", "régression logistique ordinale afin d'identifier les facteurs liés à la malnutrition enfantile"],
             ["Restitution", "interprétation des résultats et rédaction du rapport final, avec des recommandations pour cibler les villages à risque"]
           ],
           tags: ["R", "Statistique spatiale", "Régression logistique ordinale", "Nettoyage de données"],
