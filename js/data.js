@@ -3,7 +3,7 @@ var ME = {
   name: "Moussa Soulama",
   tagline: "Étudiant ingénieur en data science à l'ENSAI",
   github: "https://github.com/SoulamaMoussa",
-  linkedin: "https://www.linkedin.com/in/moussa-soulama"
+  linkedin: "https://www.linkedin.com/in/moussa-soulama-011758297?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
 };
 
 var PROJECTS = [
