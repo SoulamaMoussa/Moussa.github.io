@@ -4,6 +4,7 @@ var CV = {
   intro: "Étudiant en deuxième année du cycle ingénieur à l'ENSAI, je développe des compétences en statistique, traitement de données et apprentissage automatique. Je m'intéresse particulièrement aux applications de la Data Science dans les secteurs financier, bancaire et de la santé.",
   email: "moussa.soulama@ensai.fr",
   projectsLabel: "Projets académiques et personnels",
+  hideProjects: ["malnutrition-nouna"],
   pdf: "",   /* ex. "cv-moussa-soulama.pdf" : le fichier doit être déposé à la racine du dépôt. Laisse vide pour masquer le bouton. */
 
   /* TÂCHES RÉALISÉES PAR PROJET (clé = « id » du projet dans data.js).
