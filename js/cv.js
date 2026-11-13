@@ -38,7 +38,9 @@
     groups.push({
       id: 'projets', label: CV.projectsLabel || 'Projets', icon: 'code',
       footer: { text: 'Voir tous les projets en détail →', href: 'projets.html' },
-      items: PROJECTS.map(function (p) {
+      items: PROJECTS.filter(function (p) {
+        return (CV.hideProjects || []).indexOf(p.id) === -1;
+      }).map(function (p) {
         var page = 'projet.html?id=' + encodeURIComponent(p.id);
         return {
           period: p.date, title: p.title, link: page, summary: p.summary,
@@ -124,7 +126,7 @@
         c.logo ? h('img', { src: c.logo, alt: '', width: '64', height: '64' }) : icon('cap', 'cv-icon'),
         h('div', {}, [c.link ? h('a', { href: c.link, text: c.name }) : h('strong', { text: c.name }), h('div', { 'class': 'meta', text: c.issuer || '' })]),
         h('span', { 'class': 'tl-date', text: c.period || '' })
-      ]);
+      ];
     }))];
   }
 
