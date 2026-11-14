@@ -1,6 +1,9 @@
 var CV = {
-  intro: "Étudiant ingénieur en data science à l'ENSAI. Je travaille sur des données de santé et de prix, avec R et Python. Je cherche un stage en data science, statistique ou analyse quantitative.",
-  email: "moussa.soulama@ensai.fr",
+  name: "Moussa Soulama",
+  tagline: "Étudiant ingénieur en data science à l'ENSAI",
+  Email: "moussa.soulama@eleve.ensai.fr",
+  github: "https://github.com/SoulamaMoussa",
+  linkedin: "www.linkedin.com/in/moussa-soulama",
   projectsLabel: "Projets académiques et personnels",
   pdf: "",   /* ex. "cv-moussa-soulama.pdf" : fichier à déposer à la racine du dépôt. Vide = bouton masqué. */
 
