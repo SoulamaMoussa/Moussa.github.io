@@ -1,6 +1,3 @@
-/* DONNÉES DU CV : le seul fichier à modifier pour mettre à jour la page « Mon CV ».
-   Chaque expérience ou projet suit le même schéma : Contexte, Problème, Méthode, Résultat.
-   Règle d'écriture : phrases courtes, chiffres précis, une idée par phrase. */
 var CV = {
   intro: "Étudiant ingénieur en data science à l'ENSAI. Je travaille sur des données de santé et de prix, avec R et Python. Je cherche un stage en data science, statistique ou analyse quantitative.",
   email: "moussa.soulama@ensai.fr",
