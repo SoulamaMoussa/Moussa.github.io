@@ -61,3 +61,9 @@
 .btn-sm:hover{filter:brightness(1.1)}
 .tl-all{margin:.5rem 0 0 4.25rem;font-weight:600}
 @media (max-width:600px){.tl-all{margin-left:3.4rem}}
+
+/* Contexte / Problème / Méthode / Résultat */
+.tl-facts{display:grid;grid-template-columns:6rem 1fr;gap:.6rem 1rem;margin:.9rem 0 0}
+.tl-facts dt{font-weight:600;color:var(--accent)}
+.tl-facts dd{margin:0}
+@media (max-width:600px){.tl-facts{grid-template-columns:1fr;gap:.1rem}.tl-facts dd{margin-bottom:.6rem}}
