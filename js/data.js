@@ -2,6 +2,7 @@
 var ME = {
   name: "Moussa Soulama",
   tagline: "Étudiant ingénieur en data science à l'ENSAI",
+  Email: "moussa.soulama@eleve.ensai.fr",
   github: "https://github.com/SoulamaMoussa",
   linkedin: "www.linkedin.com/in/moussa-soulama"
 };
