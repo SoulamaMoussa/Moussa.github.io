@@ -65,7 +65,6 @@ var CV = {
   ],
 
   /* ----- PROJETS ACADÉMIQUES ET PERSONNELS ----- */
-  /* « page » : lien vers la fiche détaillée sur le site (laisse vide s'il n'y en a pas). */
   projects: [
     {
       period: "12 janv. – 13 mars 2026",
