@@ -93,10 +93,10 @@ var CV = {
         ["Contexte", "Application de vente de livres avec interactions entre utilisateurs."],
         ["Méthode", "Diagramme de base de données. Algorithmes de recommandation selon plusieurs indicateurs : livres populaires, tendances, suivis."]
       ],
-      tags: ["Base de données", "Recommandation"]
+      tags: ["Base de données", "Système de recommandation"]
     },
     {
-      period: "1re année",
+      period: "16 Dec. 2025 - 5 Juin 2026",
       title: "Inégalités scolaires dans l'OCDE (PISA 2022)",
       org: "ENSAI",
       place: "projet de groupe",
@@ -136,7 +136,7 @@ var CV = {
     ["Bibliothèques", "ggplot2, tidyverse, pandas, NumPy, Streamlit"],
     ["Statistiques", "Régression linéaire et logistique, séries temporelles, ACP, classification (CAH), économétrie, sondages"],
     ["Machine learning", "k-NN, CART, forêts aléatoires, LDA, QDA, k-means"],
-    ["Langues", "Français (langue maternelle), anglais (B1)"],
-    ["Centres d'intérêt", "Football, vélo"]
+    ["Langues", "Français (langue maternelle), Anglais (intermediaire)"],
+    ["Centres d'intérêt", "Programmation, Football, vélo"]
   ]
 };
